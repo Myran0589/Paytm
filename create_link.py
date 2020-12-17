@@ -16,7 +16,7 @@ paytmParams["body"] = {
 
 # Generate checksum by parameters we have in body
 # Find your Merchant Key in your Paytm Dashboard at https://dashboard.paytm.com/next/apikeys 
-checksum = PaytmChecksum.generateSignature(json.dumps(paytmParams["body"]), "SnOLzayQTh_ty169")
+checksum = PaytmChecksum.generateSignature(json.dumps(paytmParams["body"]), "mid")
 
 paytmParams["head"] = {
     "tokenType"       : "AES",
